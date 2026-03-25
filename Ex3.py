@@ -7,7 +7,12 @@ aprovado, reprovado ou deverá fazer prova final. O critério de aprovação é 
 '''
 
 
-n1, n2, n3 = map(float, input('Informe suas 3 notas: ').split())
+while(True):
+    if n1 < 0 or n1 > 10 or n2 < 0 or n2 > 10 or n3 < 0 or n3 > 10:
+        print('Nota inválida, notas devem ser de 0 a 10')
+        n1, n2, n3 = map(float, input('Informe suas 3 notas: ').split())
+    else:
+        break
 
 m = (n1 + n2 + n3) / 3
 
