@@ -7,7 +7,7 @@ x, y, z = map(float, input('Informe os 3 lados de um triângulo: ').split())
 
 if x == y and y == z:
     print('O triângulo é equilátero.')
-elif (x == y and x != z) or (x == z and x != y) or (y == z and y != x):
+elif x == y or x == z or y == z:
     print('O triângulo é isósceles.')
-elif x != y and x != z and y != z:
+else:
     print('O triângulo é escaleno.')
