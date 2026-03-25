@@ -4,7 +4,9 @@
 
 senha = input('Insira a Senha: ')
 
-if senha == 'ort123':
-    print('Senha correta, bem vindo!')
-else:
-    print('Senha incorreta, tente novamente.')
+while(True):
+    if senha == 'ort123':
+        print('Senha correta, bem vindo!')
+        break
+    else:
+        print('Senha incorreta, tente novamente.')
